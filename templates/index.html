@@ -1,0 +1,25 @@
+{{template "main.html" .}}
+
+{{ define "content" }}
+
+<div class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8">
+				<h1>Book List</h1>
+				<ul>
+					{{range .books}}
+					<li class="">{{.Name}} by {{.Author}} (Published by {{.Publisher}})</li>
+					{{end}}
+				</ul>
+				<div>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magni facilis earum aliquam? Ducimus quis, soluta dignissimos vero qui debitis ipsum, non, quidem facilis voluptatem mollitia hic nihil et repudiandae!</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</div>
+
+{{ end }}
